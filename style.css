@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    
+        background-image: url("images/bg.jpg");
+      
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center
+}
+.container{
+    padding: 10px 10%;
+}
+nav{
+    padding: 20px 0 20px;
+    display: flex;
+    align-items: right;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 3px;
+    position: relative;
+
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ea3971;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: o.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.wrapper{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: left;
+    align-items: center;
+    padding: 0 0%;
+    overflow: hidden;
+}
+.cols{
+    width: 50%;
+}
+.topline{
+    display: block;
+    position: left;
+    font-size: 35px;
+    letter-spacing: 5px;
+    color: #3d535f;
+}
+
+h1{
+    display: block;
+    font-size: 7em;
+    font-weight: 900;
+    color: #3d535f;
+}
+.multitext{
+    color: #7f00ff;
+    text-transform: capitalize;
+    font-size: 1em;
+}
+p{
+    display: block;
+    width: 90%;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: rgb(140, 106, 42);
+    font-family:'Quicksand', sans-serif;
+    padding: 7px 14px;
+}
+button{
+    font-family: 'Quicksand', sans-serif;
+    outline: none;
+    border: #42a1a2;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 400;
+    color: #fff;
+    background-color: #3d535f;
+    padding: 7px 14px;
+    border-radius: 14px;
+    margin: 140px 15px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    box-shadow: 0 10px 10px rgba(78, 79, 79, 0.544);
+}
+button:hover{
+    background-color: #7f00ff;
+}
+.images{
+    width: 25%;
+    height: 55%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+.images img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+    
+}
+.images:hover .shape{
+    bottom: 40px;
+}
+.images:hover .background{
+    left: 45%
+}
+span{
+    color: #7f00ff ;
+}
+.about{
+    margin: 100px 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.about-img img{
+    margin: 50px 50px;
+    width: 70%;
+    height: 65%;
+}
+.heading{
+    font-size: 4.5rem;
+    text-align: center;
+}
+.about-content h2{
+    text-align: left;
+    line-height: 1.2;
+}
+.about-content p{
+    display: block;
+    font-size: 1.3rem;
+    line-height: 2.6rem;
+    margin: 2rem 0 3rem;
+    color: rgb(177, 163, 12)
+}
+.btn{
+    font-family: 'Quicksand', sans-serif;
+    outline: none;
+    border: #42a1a2;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 400;
+    color: #fff;
+    background-color: #3d535f;
+    padding: 7px 14px;
+    border-radius: 14px;
+    margin: 40px 15px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    box-shadow: 0 10px 10px rgba(78, 79, 79, 0.544);
+}
+buttton:hover{
+    background-color: #7f00ff;
+}
+.skills{
+    margin: 180px 60px;
+}
+
+
+/* Styling the h2 tag by giving color,
+letter spacing, font-size etc.*/
+.progress-bar-container h2 {
+    margin: 50px 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #eee;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+/* Styling the border and box
+effect of the progress bar*/
+.progress-bar {
+    width: 800px;
+    height: 5px;
+    margin-top: 10px;
+    border: 1px solid #565656;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(245, 159, 0);
+}
+
+/* Stylingthe background color of each
+animation and border radius */
+.percentage {
+    display: block;
+    height: 100%;
+    background-color: orange;
+    border-radius: 5px;
+    animation: progress 1500ms ease-in 1;
+}
+
+/* Assigning width of each languages*/
+.c {
+    width: 85%;
+}
+
+.java {
+    width: 70%;
+}
+
+.python {
+    width: 55%;
+}
+
+.html {
+    width: 75%;
+}
+
+.css {
+    width: 65%;
+}
+
+.javascript {
+    width: 55%;
+}
+@keyframes progress {
+    from {
+        width: 0;
+    }
+}
+.achievements{
+    margin: 290px 50px;
+}
+.column {
+    float: left;
+    width: 28.33%;
+    padding: 5px;
+    margin: 90px 30px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .column img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+  }
+  .layer{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+  }
+  .layer h3{
+    color: #eee;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  .layer p{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .column:hover img{
+    transform: scale(1.1);
+  }
+  .column:hover .layer{
+    height: 100%;
+  }
+  .contact{
+    margin:-230px 20px;
+  }
+  .contact .container{
+    margin: 50px 50px;
+  }
+  input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  rounded-social-buttons {
+    text-align: center;
+  }
+  
+  .rounded-social-buttons .social-button {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: 3.125rem;
+    height: 3.125rem;
+    border: 0.125rem solid transparent;
+    padding: 0;
+    text-decoration: none;
+    text-align: center;
+    color: #fefefe;
+    font-size: 1.5625rem;
+    font-weight: normal;
+    line-height: 2em;
+    border-radius: 1.6875rem;
+    transition: all 0.5s ease;
+    margin-right: 0.25rem;
+    margin-bottom: 0.25rem;
+  }
+  .rounded-social-buttons{
+    margin: 70px 70px;
+  }
+  .rounded-social-buttons .social-button:hover, .rounded-social-buttons .social-button:focus {
+    -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  
+  .rounded-social-buttons .fa-twitter, .fa-facebook-f, .fa-linkedin, .fa-youtube, .fa-instagram {
+    font-size: 25px;
+  }
+  
+  .rounded-social-buttons .social-button.facebook {
+    background: #3b5998;
+  }
+  
+  .rounded-social-buttons .social-button.facebook:hover, .rounded-social-buttons .social-button.facebook:focus {
+    color: #3b5998;
+    background: #fefefe;
+    border-color: #3b5998;
+  }
+  
+  .rounded-social-buttons .social-button.twitter {
+    background: #55acee;
+  }
+  
+  .rounded-social-buttons .social-button.twitter:hover, .rounded-social-buttons .social-button.twitter:focus {
+    color: #55acee;
+    background: #fefefe;
+    border-color: #55acee;
+  }
+  
+  .rounded-social-buttons .social-button.linkedin {
+    background: #007bb5;
+  }
+  
+  .rounded-social-buttons .social-button.linkedin:hover, .rounded-social-buttons .social-button.linkedin:focus {
+    color: #007bb5;
+    background: #fefefe;
+    border-color: #007bb5;
+  }
+  
+  .rounded-social-buttons .social-button.youtube {
+    background: #bb0000;
+  }
+  
+  .rounded-social-buttons .social-button.youtube:hover, .rounded-social-buttons .social-button.youtube:focus {
+    color: #bb0000;
+    background: #fefefe;
+    border-color: #bb0000;
+  }
+  
+  .rounded-social-buttons .social-button.instagram {
+    background: #125688;
+  }
+  
+  .rounded-social-buttons .social-button.instagram:hover, .rounded-social-buttons .social-button.instagram:focus {
+    color: #125688;
+    background: #fefefe;
+    border-color: #125688;
+  }
+  
+ 
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+ .contact .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
